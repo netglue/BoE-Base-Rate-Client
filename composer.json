@@ -1,0 +1,30 @@
+{
+    "name": "netglue/boe-rates",
+    "description": "Simple utility to download and process historical Bank of England Base Rates",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "George Steel",
+            "email": "george@net-glue.co.uk"
+        }
+    ],
+    "require": {
+        "php" : ">=7.0",
+        "zendframework/zend-http": "^2.5",
+        "zendframework/zend-stdlib": "^3.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Netglue\\Money\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Netglue\\MoneyTest\\": "test/TestSuite"
+        }
+    }
+}
