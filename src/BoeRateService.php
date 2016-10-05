@@ -108,8 +108,8 @@ class BoeRateService extends SplPriorityQueue
             throw new \OutOfRangeException(sprintf(
                 'The given date %s is not within the range of the data set starting %s and ending %s',
                 $date->format('Y-m-d'),
-                $this->lastDate()->format('Y-m-d'),
-                $this->firstDate()->format('Y-m-d')
+                $this->firstDate()->format('Y-m-d'),
+                $this->lastDate()->format('Y-m-d')
             ));
         }
 
